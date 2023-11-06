@@ -1,0 +1,26 @@
+[
+  {
+    "name": "cursor",
+    "label": "Curseur",
+    "price": 10,
+    "bonus": 1
+  },
+  {
+    "name": "granny",
+    "label": "Grand mère",
+    "price": 50,
+    "bonus": 10
+  },
+  {
+    "name": "mine",
+    "label": "Mine",
+    "price": 100,
+    "bonus": 50
+  },
+  {
+    "name": "temple",
+    "label": "Temple",
+    "price": 500,
+    "bonus": 150
+  }
+]

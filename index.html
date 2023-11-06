@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="l-app">
+      <div>
+        <div class="c-cookie-counter js-cookie-counter u-hidden">0</div>
+        <div class="js-cps-counter u-hidden">0</div>
+        <button class="js-cookie-btn u-hidden">Cookie</button>
+        <button class="js-reset-btn u-hidden">Reset</button>
+      </div>
+      <div>Inventaire</div>
+      <div>
+        <h3>Shop</h3>
+        <ul class="js-shop-list"></ul>
+      </div>
+    </div>
+
+    <template class="js-shop-item-tpl">
+      <li class="c-shop-item">
+        <h4>
+          <button class="c-shop-item__btn js-shop-item-buy-btn" disabled="disabled">
+            Buy
+          </button>
+          <span class="js-shop-item-label"></span>
+        </h4>
+        <p class="js-shop-item-price"></p>
+        <p class="js-shop-item-bonus"></p>
+      </li>
+    </template>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

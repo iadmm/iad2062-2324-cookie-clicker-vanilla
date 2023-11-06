@@ -1,0 +1,16 @@
+.l-app {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.c-cookie-counter{
+  font-size: 64px;
+  color: deeppink;
+  font-family: "Comic Sans MS";
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.u-hidden{
+  display: none;
+}
