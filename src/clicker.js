@@ -10,13 +10,17 @@ const init = (game) => {
   };
   const onResetClick = () => {
     game.setCookieCount(0);
+    game.setBonusCount(0);
+    game.purchases = [];
   };
   const render = (event) => {
     hiddenElements.forEach((element) => {
       element.classList.toggle("u-hidden", false);
     });
     cookieCounterElement.innerHTML = game.cookieCount;
-    cookieCpsCounterElement.innerHTML = `${game.cookiePerSecond} cookies per second`;
+    cookieCpsCounterElement.innerHTML = `${
+      game.cookiePerSecond + game.bonusCount
+    } cookies per second`;
   };
   cookieBtnElement.addEventListener("click", onCookieClick);
   resetBtnElement.addEventListener("click", onResetClick);
